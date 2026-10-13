@@ -19,7 +19,6 @@ function change(clusterId: number, attributeId: number, value: unknown): Attribu
     };
 }
 
-/** Applies a change against a cache that reports `removed`, recording what the consumers receive. */
 function apply(data: AttributeChange, removed: boolean) {
     const emitted = new Array<AttributeChange>();
     const reasons = new Array<string>();

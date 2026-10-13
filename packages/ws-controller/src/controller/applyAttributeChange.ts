@@ -46,7 +46,6 @@ function describesNodeStructure(path: AttributeChange["path"]): string | undefin
     return undefined;
 }
 
-/** Applies a peer's attribute change to the cache and its consumers, and requests a full node refresh when needed. */
 export function applyAttributeChange(
     nodeId: NodeId,
     change: AttributeChange,
